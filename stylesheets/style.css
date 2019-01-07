@@ -1,0 +1,77 @@
+body {
+    width: 100%;
+    font-size: small;
+    padding: 0;
+    margin: 0;
+    background-color: f0f0f0;
+    font-family: arial, sans-serif;
+}
+#logo {
+    height: 233px;
+    margin-top: 89px;
+    display: block;
+    text-align: center;
+}
+#search-box {
+    display: block;
+    position: relative;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    margin: 0 auto;
+    padding: 0;
+    width: 584px;
+    line-height:34px;
+    height: 34px !important;
+}
+ul li {
+    display: inline;
+}
+#input-box {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+}
+#left-nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#right-nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#main-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+#left-footer {
+    float: left;
+}
+#right-footer {
+    float: right;
+}
+#uk-footer {
+    position: absolute;
+    bottom: 50px;
+}
+#search-buttons {
+    width: 200px;
+    position: relative;
+    top: 10%;
+    left: 30%;
+}
+#google-search {
+    float: left;
+}
+#lucky {
+    float: right;
+}

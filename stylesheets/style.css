@@ -6,13 +6,18 @@ body {
     background-color: f0f0f0;
     font-family: arial, sans-serif;
 }
-#logo {
+.logo-div {
     height: 233px;
     margin-top: 89px;
     display: block;
     text-align: center;
 }
-#search-box {
+.google-logo {
+    height: 92px; 
+    width: 272px;
+    padding-top: 109px;
+}
+.search-box {
     display: block;
     position: relative;
     border: none;
@@ -27,7 +32,7 @@ body {
 ul li {
     display: inline;
 }
-#input-box {
+.input-box {
     background-color: transparent;
     border: none;
     margin: 0;
@@ -38,40 +43,40 @@ ul li {
     display: flex;
     flex: 100%;
 }
-#left-nav {
+.left-nav {
     position: absolute;
     left: 0;
     top: 0;
 }
-#right-nav {
+.right-nav {
     position: absolute;
     right: 0;
     top: 0;
 }
-#main-footer {
+.main-footer {
     position: absolute;
     bottom: 0;
     width: 100%;
 }
-#left-footer {
+.left-footer {
     float: left;
 }
-#right-footer {
+.right-footer {
     float: right;
 }
-#uk-footer {
+.uk-footer {
     position: absolute;
     bottom: 50px;
 }
-#search-buttons {
+.search-buttons {
     width: 200px;
     position: relative;
     top: 10%;
     left: 30%;
 }
-#google-search {
+.google-search {
     float: left;
 }
-#lucky {
+.lucky {
     float: right;
 }

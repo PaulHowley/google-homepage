@@ -7,20 +7,20 @@ body {
   font-family: arial, sans-serif;
 }
 
-.logo-div {
+.c-logo-div {
   height: 233px;
   margin-top: 89px;
   display: block;
   text-align: center;
 }
 
-.google-logo {
+.c-logo-div__google-logo {
   height: 92px; 
   width: 272px;
   padding-top: 109px;
 }
 
-.search-box {
+.c-search-box {
   display: block;
   position: relative;
   border: none;
@@ -44,7 +44,7 @@ ul li a {
   padding: 10px;
 }
 
-.input-box {
+.c-search-box__input-box {
   background-color: transparent;
   border: none;
   margin: 0;
@@ -56,21 +56,21 @@ ul li a {
   flex: 100%;
 }
 
-.left-nav {
+.c-left-nav {
   position: absolute;
   left: 0;
   top: 0;
   margin: 7px 0 0 10px;
 }
 
-.right-nav {
+.c-right-nav {
   position: absolute;
   right: 0;
   top: 0;
   margin: 7px 10px 0 10px;
 }
 
-.main-footer {
+.c-main-footer {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -79,20 +79,20 @@ ul li a {
   margin: 0;
 }
 
-.left-footer {
+.c-main-footer__left-footer {
   float: left;
 }
 
-.left-footer-text, .right-footer-text {
+.c-main-footer__left-footer ul li a, .c-main-footer__right-footer ul li a {
   color: #5f6368;
 }
 
-.right-footer {
+.c-main-footer__right-footer {
   float: right;
   margin-right: 10px;
 }
 
-.country-footer {
+.c-country-footer {
   position: absolute;
   bottom: 50px;
   background: #f2f2f2;
@@ -102,12 +102,12 @@ ul li a {
   line-height: 40px;
 }
 
-.country {
+.c-country-footer__country {
   margin-left: 50px;
   color: rgba(0,0,0,.54);
 }
 
-.search-buttons {
+.c-search-buttons {
   width: 200px;
   position: relative;
   top: 10px;
@@ -115,7 +115,7 @@ ul li a {
   display: inline;  
 }
 
-.google-search, .lucky {
+.c-search-buttons__google-search, .c-search-buttons__lucky {
   background: #f2f2f2;
   height: 36px;
   line-height: 27px;
@@ -127,7 +127,7 @@ ul li a {
   margin: 11px 4px;
 }
 
-.sign-in {
+.c-right-nav__sign-in--blue {
   background: #4285f4;
   color: #fff;
   border-radius: 2px;

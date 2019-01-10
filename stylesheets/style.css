@@ -1,73 +1,44 @@
 body {
   width: 100%;
-  font-size: small;
+  font-size: 75%;
   padding: 0;
   margin: 0;
   background-color: f0f0f0;
   font-family: arial, sans-serif;
+  display: inline;
 }
 
-.c-logo-div {
-  height: 233px;
-  margin-top: 89px;
-  display: block;
-  text-align: center;
-}
-
-.c-logo-div__google-logo {
-  height: 92px; 
-  width: 272px;
-  padding-top: 109px;
-}
-
-.c-search-box {
-  display: block;
-  position: relative;
-  border: none;
-  border-radius: 2px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
-  margin: 0 auto;
-  padding: 0;
-  width: 584px;
-  line-height:34px;
-  height: 34px !important;
+ul {
+  padding-inline-start: 0;
 }
 
 ul li {
   display: inline;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 ul li a {
   text-decoration: none;
   color: #000;
-  padding: 10px;
-}
-
-.c-search-box__input-box {
-  background-color: transparent;
-  border: none;
+  padding: .4em;
   margin: 0;
-  padding: 0;
-  color: rgba(0,0,0,.87);
-  word-wrap: break-word;
-  outline: none;
-  display: flex;
-  flex: 100%;
-}
-
-.c-left-nav {
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin: 7px 0 0 10px;
 }
 
 .c-right-nav {
   position: absolute;
   right: 0;
   top: 0;
-  margin: 7px 10px 0 10px;
+  margin-right: 5%;
+}
+
+.c-left-nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 5%;
+  display: inline-block;
 }
 
 .c-main-footer {
@@ -77,54 +48,107 @@ ul li a {
   background: #f2f2f2;
   border-top: 1px solid #e4e4e4;
   margin: 0;
-}
-
-.c-main-footer__left-footer {
-  float: left;
-}
-
-.c-main-footer__left-footer ul li a, .c-main-footer__right-footer ul li a {
-  color: #5f6368;
+  padding: 0;
 }
 
 .c-main-footer__right-footer {
   float: right;
-  margin-right: 10px;
+  margin-right: 5%;
+  
+}
+
+.c-main-footer__left-footer {
+  float: left;
+  margin: 0;
+  margin-left: 5%;
+  padding: 0;
+  display: inline-block;
 }
 
 .c-country-footer {
   position: absolute;
-  bottom: 50px;
+  bottom: 8%;
   background: #f2f2f2;
   border-top: 1px solid #e4e4e4;
   width: 100%;
-  margin-bottom: -10px;
-  line-height: 40px;
+  margin-bottom: -4%;
+  line-height: 4em;
 }
 
 .c-country-footer__country {
-  margin-left: 50px;
+  margin-left: 5%;
   color: rgba(0,0,0,.54);
 }
 
+.c-logo-div {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: auto;
+  display: block;
+  text-align: center;
+  margin: .5em;
+}
+
+.c-logo-div__google-logo {
+  height: auto; 
+  width: 100%;
+  max-width: 200px;
+  padding: 0;
+}
+
+.c-search-box-div {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 35%;
+}
+
+.c-search-box-div__search-box {
+  display: inline-block;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  padding: 0;
+  width: 90%;
+  max-width: 200px;
+  height: 2em;
+  margin: 5%;
+}
+
+.c-search-box-div__search-box--input-box {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: rgba(0,0,0,.87);
+  word-wrap: break-word;
+  outline: none;
+  width: 100%;
+  height: 1em;
+}
+
 .c-search-buttons {
-  width: 200px;
-  position: relative;
-  top: 10px;
-  left: 40%;
+  width: 90%;
+  margin: 0 5%;
+  height: auto;
+  position: absolute;
+  top: 45%;
+  text-align: center;
   display: inline;  
 }
 
 .c-search-buttons__google-search, .c-search-buttons__lucky {
   background: #f2f2f2;
-  height: 36px;
-  line-height: 27px;
+  height: auto;
   border: 1px solid #f2f2f2;
   border-radius: 2px;
   color: #757575;
-  font-size: 13px;
+  font-size: 1em;
   font-weight: bold;
-  margin: 11px 4px;
+  margin: 0 .5em;
+  padding: .5em;
 }
 
 .c-right-nav__sign-in--blue {
@@ -132,4 +156,66 @@ ul li a {
   color: #fff;
   border-radius: 2px;
   font-weight: bold;
+}
+
+@media (min-width: 568px) {
+  .c-search-box-div  {
+    top: 40%;
+  }
+
+  .c-search-buttons {
+    top: 60%;
+  }
+
+  .c-country-footer {
+    bottom: 18%;
+  }
+}
+
+@media (min-width: 768px) {
+  .c-search-box-div  {
+    top: 30%;
+  }
+
+  .c-search-buttons {
+    top: 40%;
+  }
+
+  .c-country-footer {
+    bottom: 6%;
+  }
+}
+
+@media (min-width: 992px) {
+  .c-search-box-div  {
+    top: 30%;
+  }
+
+  .c-search-box-div__search-box  {
+    max-width: 300px;
+  }
+
+  .c-search-buttons {
+    top: 45%;
+  }
+
+  .c-country-footer {
+    bottom: 12%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .c-search-box-div  {
+    top: 30%;
+  }
+
+  
+
+  .c-search-buttons {
+    top: 50%;
+  }
+
+  .c-country-footer {
+    bottom: 14%;
+  }
 }
